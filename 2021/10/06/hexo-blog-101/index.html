@@ -10,7 +10,7 @@
   
   <title>
     
-      test new post | Hexo
+      hexo blog 101 | Hexo
     
   </title>
   <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -192,7 +192,7 @@
 </header>
 
     <div id="article-banner">
-  <h2>test new post</h2>
+  <h2>hexo blog 101</h2>
   <p class="post-date">2021-10-06</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
@@ -202,8 +202,42 @@
   <!-- Article START -->
   <article class="post-article">
     <section class="markdown-content"><span id="more"></span>
-<!-- markdownlint-disable MD041 MD002--> </section>
+<!-- markdownlint-disable MD041 MD002--> 
+
+<h1 id="Hexo-Blog-101"><a href="#Hexo-Blog-101" class="headerlink" title="Hexo Blog 101"></a>Hexo Blog 101</h1><h2 id="Make-Sure-you-get-Node-js-environment"><a href="#Make-Sure-you-get-Node-js-environment" class="headerlink" title="Make Sure you get Node.js environment"></a>Make Sure you get Node.js environment</h2><p><code>node =v</code> &amp; <code>npm -v</code> to make sure the environment is ok.</p>
+<h2 id="Insall-Git"><a href="#Insall-Git" class="headerlink" title="Insall Git"></a>Insall Git</h2><p><code>git --version</code> to make sure the environment is ok. </p>
+<p>Make sure you can connect to github ok.</p>
+<p><code>ssh -T git@github.com</code> should give you the right outcome.</p>
+<p>See <a href="">git &amp; github 101</a> to see more about git.</p>
+<h2 id="Install-Hexo"><a href="#Install-Hexo" class="headerlink" title="Install Hexo"></a>Install Hexo</h2><p><code>npm i Hexo-cli -g</code> to install Hexo.</p>
+<p><code>hexo -v</code> to check the environment ok.</p>
+<h2 id="Publish-new-article"><a href="#Publish-new-article" class="headerlink" title="Publish new article"></a>Publish new article</h2><p><code>hexo new [layout] &lt;title&gt;</code> <code>post</code> is the default layout. </p>
+<h3 id="Change-Post-layout"><a href="#Change-Post-layout" class="headerlink" title="Change Post layout"></a>Change Post layout</h3><p>You can change files in scaffolds to change the default layout of post and draft.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &#123;&#123; title &#125;&#125;</span><br><span class="line">tags:</span><br><span class="line">categories:</span><br><span class="line">description:</span><br><span class="line"><span class="section">date: &#123;&#123; date &#125;&#125;</span></span><br><span class="line"><span class="section">---</span></span><br><span class="line"></span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">&lt;!-- markdownlint-disable MD041 MD002--&gt; </span><br></pre></td></tr></table></figure>
+
+<h2 id="Change-Hexo-Theme"><a href="#Change-Hexo-Theme" class="headerlink" title="Change Hexo Theme"></a>Change Hexo Theme</h2><h3 id="Download-Checkout-theme-into-you-project"><a href="#Download-Checkout-theme-into-you-project" class="headerlink" title="Download/Checkout theme into you project"></a>Download/Checkout theme into you project</h3><p>Take vexo as an example</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> your-hexo-folder</span><br><span class="line"></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/yanm1ng/hexo-theme-vexo.git themes/vexo</span><br><span class="line"></span><br><span class="line">cp -R themes/vexo/_source/* <span class="built_in">source</span>/</span><br></pre></td></tr></table></figure>
+
+<h3 id="Update-project-config-yml-theme-config"><a href="#Update-project-config-yml-theme-config" class="headerlink" title="Update project _config.yml theme config"></a>Update project <code>_config.yml</code> theme config</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">themes:</span> <span class="string">vexo</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="Modify-theme-themes-vexo-config-yml-with-your-own-info"><a href="#Modify-theme-themes-vexo-config-yml-with-your-own-info" class="headerlink" title="Modify theme themes/vexo/_config.yml with your own info"></a>Modify theme <code>themes/vexo/_config.yml</code> with your own info</h3><h3 id="Update-Version"><a href="#Update-Version" class="headerlink" title="Update Version"></a>Update Version</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> themes/vexo</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure>
+
+<h2 id="Backup-Source-Code-to-Github"><a href="#Backup-Source-Code-to-Github" class="headerlink" title="Backup Source Code to Github"></a>Backup Source Code to Github</h2><p>We need to create a branch, called like hexo for example on our github page repo. We can git clone the repository to our computer and track the branch hexo. For example, <code>git branch -b hexo</code> , do things we like, then <code>git push origin hexo</code>.</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2></section>
     <!-- Tags START -->
+    
+      <div class="tags">
+        <span>Tags:</span>
+        
+  <a href="/tags#settings" >
+    <span class="tag-code">settings</span>
+  </a>
+
+  <a href="/tags#101 series" >
+    <span class="tag-code">101 series</span>
+  </a>
+
+      </div>
     
     <!-- Tags END -->
     <!-- NAV START -->
@@ -211,17 +245,17 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-      <a class="nav-left" href="/2021/10/06/new-new-article/">
+      <a class="nav-left" href="/2021/10/06/test-new-post/">
         <span class="nav-arrow">← </span>
         
-          new new article
+          test new post
         
       </a>
     
     
-      <a class="nav-right" href="/2021/10/06/hexo-blog-101/">
+      <a class="nav-right" href="/2021/10/06/git-github-101/">
         
-          hexo blog 101
+          git &amp; github 101
         
         <span class="nav-arrow"> →</span>
       </a>
@@ -276,7 +310,7 @@
   <div class="toc-main">
     <strong class="toc-title">Catalog</strong>
     
-      <ol class="nav">none</ol>
+      <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#Hexo-Blog-101"><span class="toc-nav-text">Hexo Blog 101</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Make-Sure-you-get-Node-js-environment"><span class="toc-nav-text">Make Sure you get Node.js environment</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Insall-Git"><span class="toc-nav-text">Insall Git</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Install-Hexo"><span class="toc-nav-text">Install Hexo</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Publish-new-article"><span class="toc-nav-text">Publish new article</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Change-Post-layout"><span class="toc-nav-text">Change Post layout</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Change-Hexo-Theme"><span class="toc-nav-text">Change Hexo Theme</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Download-Checkout-theme-into-you-project"><span class="toc-nav-text">Download&#x2F;Checkout theme into you project</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Update-project-config-yml-theme-config"><span class="toc-nav-text">Update project _config.yml theme config</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Modify-theme-themes-vexo-config-yml-with-your-own-info"><span class="toc-nav-text">Modify theme themes&#x2F;vexo&#x2F;_config.yml with your own info</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#Update-Version"><span class="toc-nav-text">Update Version</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Backup-Source-Code-to-Github"><span class="toc-nav-text">Backup Source Code to Github</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link"><span class="toc-nav-text"></span></a></li></ol></li></ol>
     
   </div>
 </aside>
@@ -286,7 +320,7 @@
 
 <script>
   (function () {
-    var url = 'http://example.com/2021/10/06/test-new-post/';
+    var url = 'http://example.com/2021/10/06/hexo-blog-101/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
