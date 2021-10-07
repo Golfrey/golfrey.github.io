@@ -1,5 +1,6 @@
 ---
 title: hexo blog 101
+toc: true
 date: 2021-10-06 22:44:56
 tags:
 - settings
@@ -11,8 +12,6 @@ description: This is a setup tutorial for user like me to re-setup their environ
 
 <!-- more -->
 <!-- markdownlint-disable MD041 MD002--> 
-
-# Hexo Blog 101
 
 ## Make Sure you get Node.js environment
 
